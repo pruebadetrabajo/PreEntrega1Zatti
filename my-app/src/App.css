@@ -1,4 +1,26 @@
+#contenedorNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+}
 
+#contenedorLogo {
+  display: inline;
+}
+
+#contenedorNav {
+  display: inline;
+  background-color: #333;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------------*/
 #nav {
   background-color: #333;
   overflow: hidden;
@@ -11,11 +33,26 @@
 }
 
 #nav li {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
   float: left; 
 }
 
 #nav li a #carrito{
-  width: 35px; 
+  width: 40px; 
+}
+
+.carritoCount {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  line-height: 17px;
 }
 
 #nav li a {
